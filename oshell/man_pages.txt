@@ -1,0 +1,89 @@
+OShell Built-in Commands Manual
+===============================
+
+NAME
+    cd - change the shell working directory
+
+SYNOPSIS
+    cd [DIRECTORY]
+    cd -
+    cd --
+
+DESCRIPTION
+    Change the current directory to DIRECTORY. The default directory is the value
+    of the HOME shell variable.
+    
+    -     Equivalent to $OLDPWD. Prints the new directory.
+    --    Equivalent to $OLDPWD. Does NOT print the new directory.
+
+--------------------------------------------------------------------------------
+
+NAME
+    exit - exit the shell
+
+SYNOPSIS
+    exit [N]
+
+DESCRIPTION
+    Exits the shell with a status of N. If N is omitted, the exit status is 0.
+
+--------------------------------------------------------------------------------
+
+NAME
+    env - print environment variables
+
+SYNOPSIS
+    env
+
+DESCRIPTION
+    Prints all environment variables in the form NAME=VALUE.
+
+--------------------------------------------------------------------------------
+
+NAME
+    setenv - change or add an environment variable
+
+SYNOPSIS
+    setenv NAME [VALUE]
+
+DESCRIPTION
+    Sets the environment variable NAME to VALUE. If VALUE is omitted, it is set
+    to an empty string.
+
+--------------------------------------------------------------------------------
+
+NAME
+    unsetenv - remove an environment variable
+
+SYNOPSIS
+    unsetenv NAME
+
+DESCRIPTION
+    Removes the variable NAME from the environment.
+
+--------------------------------------------------------------------------------
+
+NAME
+    alias - define or display aliases
+
+SYNOPSIS
+    alias [NAME[='VALUE'] ...]
+
+DESCRIPTION
+    Without arguments, `alias` prints the list of aliases in the form NAME='VALUE'.
+    
+    With arguments, an alias is defined for each NAME whose VALUE is given.
+    If no value is given, the name and value of the alias is printed.
+
+--------------------------------------------------------------------------------
+
+NAME
+    path - set search path
+
+SYNOPSIS
+    path [DIR1 DIR2 ...]
+
+DESCRIPTION
+    Replaces the shell's internal search path list with the specified directories.
+    If no arguments are provided, the path list is cleared (no external commands
+    can be executed).
