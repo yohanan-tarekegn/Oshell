@@ -1,4 +1,8 @@
-Group Members
+
+
+
+Group Members:
+
 Yohanan Tarekegn
 
 Yididiya Gebretsadik
@@ -66,6 +70,10 @@ To clean build artifacts:
 ```bash
 make clean
 ```
+## my contribution
+i coded the logical operators feature by vscode and ai tools, 
+i tested the final project  outcome for any types of errors and checklisted for the required features
+i presented this project for our lecturer , explained what was the process to reach at the final result of our work
 
 ## Execution
 
